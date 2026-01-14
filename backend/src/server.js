@@ -14,6 +14,9 @@ const startServer = async () => {
     await connectRedis();
 
     const PORT = process.env.PORT || 5000;
+    app.get("/", (req, res) => {
+  res.send("Rate Limiter API is running");
+});
 
     app.listen(PORT, () => {
       console.log(`🚀 Backend server running on port ${PORT}`);
