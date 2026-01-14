@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import app from "./app.js";
 import connectDB from "./config/db.js";
 import { connectRedis } from "./config/redis.js";
-
+import cors from "cors";
 dotenv.config();
 app.use(cors({
   origin: "*"
