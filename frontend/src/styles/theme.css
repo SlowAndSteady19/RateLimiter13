@@ -1,0 +1,82 @@
+/* ===== Theme Variables ===== */
+:root {
+  --bg-cream: #f5f1ea;
+  --brown-primary: #6b4f3f;
+  --brown-light: #a1866f;
+  --border-light: #e0d6c9;
+  --text-dark: #3e2f25;
+  --white: #ffffff;
+}
+
+/* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-cream);
+  color: var(--text-dark);
+}
+
+/* ===== Layout ===== */
+.page-center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Card ===== */
+.card {
+  background: var(--white);
+  padding: 32px;
+  width: 360px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+}
+
+/* ===== Headings ===== */
+.card h2 {
+  margin-bottom: 20px;
+  color: var(--brown-primary);
+}
+
+/* ===== Inputs ===== */
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 4px;
+  border: 1px solid var(--border-light);
+  outline: none;
+}
+
+.card input:focus {
+  border-color: var(--brown-primary);
+}
+
+/* ===== Buttons ===== */
+.primary-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--brown-primary);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background-color: var(--brown-light);
+}
+
+/* ===== Links ===== */
+.link-text {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--brown-primary);
+  cursor: pointer;
+  text-align: center;
+}
